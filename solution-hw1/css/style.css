@@ -103,44 +103,7 @@ is there a way to include border on hover? */
     border: 3px solid black;
 }
 
-.drop-btn{
-    background-color: black;
-    color: white;
-    width: 100px;
-    padding: 18px;
-    border: 0;
-    font-size: 17px;
-    }
 
-.glazing {
-    position: relative;
-    display: inline-block;
-    width: 160px;
-}
-
-.dropdown-content {
-    display: none;
-    background-color: white;
-    width: 100%;
-}
-
-.glazing:hover .drop-btn {
-
-    background-color: sandybrown;
-    
-    }
-    
-.dropdown-content p:hover {
-    
-    background-color: lightgrey;
-    
-}
-    
-.glazing:hover .dropdown-content {
-    
-    display: block;
-    
-}
 
 /* ---------------------------------------------------------- */
 
