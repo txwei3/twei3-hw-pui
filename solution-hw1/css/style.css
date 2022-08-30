@@ -95,6 +95,14 @@ is there a way to include border on hover? */
     width: 505px;
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
+}
+
+.detail-description {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .detail-menu-item {
@@ -102,6 +110,26 @@ is there a way to include border on hover? */
     height: 500px;
     border: 3px solid black;
 }
+
+.glazing, .size {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.checkout{
+    display: inline-flex
+    
+}
+.total-cost, .add-to-cart {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+
 
 
 
