@@ -1,0 +1,175 @@
+
+/* -------------------Universal----------------------- */
+.logo {
+    padding-left: 40px;
+    width: 400px;
+    height: 400px;
+}
+
+.header {
+    border-bottom: 5px solid black;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+
+}
+/* ------------------------------------------------------- */
+
+/* -----------------Product Gallery--------------------- */
+h1 {
+    font-weight: 700;
+    font-size: 20px;
+    text-align:center;
+    color: black;
+}
+
+h4 {
+    font-weight: 70;
+    font-size: 20px;
+    text-align:center;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 30px;
+    text-align:center;
+}
+
+.menu { 
+    padding-top: 20px;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* added 5 px to width to accomodate for border when hovering. 
+is there a way to include border on hover? */
+.item {
+    width: 305px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.item:hover .name{
+    font-weight: 700;
+}
+
+
+/* how do i cause things to not shift when on hover? */
+.item:hover {
+    cursor: pointer;
+    background-color: yellow;
+    border: 5px solid yellow;
+}
+
+
+.menu-item {
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+}
+
+.name {
+    text-decoration: underline;
+    margin-bottom: 7px;
+    margin-top: 10px;
+}
+
+.price {
+    margin-top: 7px;
+}
+
+.name, .price{
+    font-size: 20px;
+}
+
+.products:hover {
+    background-color: yellow;
+}
+/* ---------------------------------------------------------- */
+
+
+/* --------------------detail----------------------------- */
+.detail-item {
+    width: 505px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.detail-menu-item {
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+}
+
+.drop-btn{
+    background-color: black;
+    color: white;
+    width: 100px;
+    padding: 18px;
+    border: 0;
+    font-size: 17px;
+    }
+
+.glazing {
+    position: relative;
+    display: inline-block;
+    width: 160px;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: white;
+    width: 100%;
+}
+
+.glazing:hover .drop-btn {
+
+    background-color: sandybrown;
+    
+    }
+    
+.dropdown-content p:hover {
+    
+    background-color: lightgrey;
+    
+}
+    
+.glazing:hover .dropdown-content {
+    
+    display: block;
+    
+}
+
+/* ---------------------------------------------------------- */
+
+
+/* --------------------cart----------------------------- */
+
+.shopping-cart{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.cart-item{
+    width:105px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cart-menu-item{
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+}
+
+.purchase {
+    border-top: 5px solid black;
+    padding-top: 15px;
+
+}
+
+/* ---------------------------------------------------------- */
