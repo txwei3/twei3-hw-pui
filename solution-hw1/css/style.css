@@ -17,20 +17,46 @@ body {
 a {
     text-decoration: none;
 }
-/* ------------------------------------------------------- */
 
-/* -----------------Product Gallery--------------------- */
 h1 {
-    font-weight: 700;
+    font-weight: 70;
     font-size: 20px;
     text-align:center;
     color: black;
 }
+/* ------------------------------------------------------- */
 
-h4 {
+/* -----------------Product Gallery--------------------- */
+/* h1 {
     font-weight: 70;
     font-size: 20px;
     text-align:center;
+    color: black;
+} */
+
+/* h4 {
+    font-weight: 70;
+    font-size: 20px;
+    text-align:center;
+} */
+
+.gallery-products {
+    font-weight: 700;
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+
+.gallery-cart {
+    font-weight: 70;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -95,6 +121,25 @@ is there a way to include border on hover? */
 
 
 /* --------------------detail----------------------------- */
+.detail-products {
+    font-weight: 700;
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+
+.detail-cart {
+    font-weight: 70;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .detail-product-header {
     font-size: 30px;
     font-weight: 300;
@@ -161,7 +206,7 @@ option, select {
     width: 300px;
     margin-right: auto;
     margin-left: auto;
-
+    margin-bottom: 50px;
 }
 
 .total-cost {
@@ -189,6 +234,28 @@ option, select {
 
 
 /* --------------------cart----------------------------- */
+.cart-products {
+    font-weight: 70;
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.cart-price {
+    font-weight: 700;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+
+
+
 
 .shopping-cart{
     width: 800px;
