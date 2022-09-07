@@ -77,16 +77,13 @@ h2 {
 
 /* ------------------------------------------------------- */
 
-/* -----------------Product Gallery--------------------- */
 
-
-
+/* --------------------detail----------------------------- */
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
 }
 
-.gallery-products {
+.detail-products {
     font-weight: 700;
     width: 150px;
     margin-right: auto;
@@ -96,7 +93,7 @@ h2 {
     background-color: yellow;
 }
 
-.gallery-cart {
+.detail-cart {
     font-weight: 70;
     width: 100px;
     margin-right: auto;
@@ -105,60 +102,94 @@ h2 {
     margin-bottom: 10px;
 }
 
+.detail-product-header {
+    font-size: 30px;
+    font-weight: 300;
 
-.menu { 
-    padding-top: 20px;
-    width: 1100px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
-/* added 5 px to width to accomodate for border when hovering. 
-is there a way to include border on hover? */
-.item {
-    width: 305px;
+.detail-item {
+    width: 505px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 20px;
+    text-align: center;
 }
 
-.item:hover .name{
+.detail-description {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    text-align: left;
+    
+
+}
+
+.detail-menu-item {
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+}
+
+.glazing, .size {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+
+.total-cost, .add-to-cart {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+label {
+    font-size: 20px;
+}
+
+.dropdown-content {
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border: 3px solid black;
+}
+
+option, select {
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.checkout{
+    /* display: inline-flex; */
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+
+.total-cost {
+    padding-right: 50px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.add-to-cart {
+    text-align: center;
+    width: 170px;
+    height: 50px;
+    border: 3px solid black;
+    background-color: yellow;
+    font-size: 20px;
     font-weight: 700;
 }
 
 
-/* how do i cause things to not shift when on hover? */
-.item:hover {
-    cursor: pointer;
-    background-color: yellow;
-    border: 5px solid yellow;
-}
 
-
-.menu-item {
-    width: 300px;
-    height: 300px;
-    border: 3px solid black;
-}
-
-.name {
-    /* font-weight: 700; */
-    text-decoration: underline;
-    margin-bottom: 7px;
-    margin-top: 10px;
-}
-
-.price {
-    margin-top: 7px;
-}
-
-.name, .price{
-    font-size: 20px;
-}
-
-.products:hover {
-    background-color: yellow;
-}
 /* ---------------------------------------------------------- */
-
-

@@ -4,26 +4,37 @@
   <title>Gallery</title>
   <link rel="stylesheet" href="css/index-css.css">
   <body>
-    <div class = "header">
-      <a href = "./index.html">
-        <img class = "logo" src = "./HW1-assets/logo/logo-01.svg"   alt = "main logo">
-      </a>
-    </div>
+
+    
 
     <!-- clicking on logo and "product" links to gallery -->
     <!-- clicking on cart links to cart page -->
     <!-- clicking on image or product name links to detail 
       (only need to show original cinnamon roll) -->
-    
-    
+    <nav class = "navbar">
+      <div class = "logo">
+        <a href = "./index.html">
+          <img id = "logo" src = "./HW1-assets/logo/logo-01.svg"   alt = "main logo">
+        </a>
+      </div>
+      <div class = "header">
+        <ul class = "nav-links">
+          <li class = "nav-item-products"><a href="./index.html"><mark>PRODUCTS</mark></a></li>
+          <li class = "nav-item-cart"><a href="./cart.html">CART</a></li>
+        </ul>
+        <br>
+        <div class = "page-title">
+          <hr>
+          <br><br>
+          <h2>Our hand-made cinnamon rolls</h2>
+        </div>
+      </div>
+    </nav>
+
+     
+
     <div class = "menu">
-      <h1 class = "gallery-products"><a href="./index.html"><mark>PRODUCTS</mark></a></h1>
-      <h1 class = "gallery-cart"><a href="./cart.html">CART</a></h1>
-
-      <br>
-
-      <h2>Our hand-made cinnamon rolls</h2>
-      <div class = "grid-container">
+      <div class = "flex-container">
         <div class = "item">
           <a href="./detail.html">
             <div class = "picture">
