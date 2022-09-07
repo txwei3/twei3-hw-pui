@@ -1,0 +1,116 @@
+
+/* -------------------Universal----------------------- */
+.logo {
+    padding-left: 40px;
+    width: 400px;
+    height: 400px;
+}
+
+.header {
+    border-bottom: 5px solid black;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 70;
+    font-size: 20px;
+    text-align:center;
+    color: black;
+}
+/* ------------------------------------------------------- */
+
+/* -----------------Product Gallery--------------------- */
+.grid-container {
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.gallery-products {
+    font-weight: 700;
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+
+.gallery-cart {
+    font-weight: 70;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 30px;
+    text-align:center;
+}
+
+.menu { 
+    padding-top: 20px;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* added 5 px to width to accomodate for border when hovering. 
+is there a way to include border on hover? */
+.item {
+    width: 305px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.item:hover .name{
+    font-weight: 700;
+}
+
+
+/* how do i cause things to not shift when on hover? */
+.item:hover {
+    cursor: pointer;
+    background-color: yellow;
+    border: 5px solid yellow;
+}
+
+
+.menu-item {
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+}
+
+.name {
+    /* font-weight: 700; */
+    text-decoration: underline;
+    margin-bottom: 7px;
+    margin-top: 10px;
+}
+
+.price {
+    margin-top: 7px;
+}
+
+.name, .price{
+    font-size: 20px;
+}
+
+.products:hover {
+    background-color: yellow;
+}
+/* ---------------------------------------------------------- */
+
+
