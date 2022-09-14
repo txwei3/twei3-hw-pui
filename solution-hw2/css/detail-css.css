@@ -5,6 +5,7 @@
     padding-left: 40px;
     width: 400px;
     height: 400px;
+    flex: 0 1 auto; 
 }
 
 hr {
