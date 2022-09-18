@@ -1,5 +1,5 @@
 # PUI homework
 
-Deployed website: `add the URL to your deployed website`
+Deployed website: https://txwei3.github.io/twei3-hw-pui/
 
-Repository link: `add the URL to this repository`
+Repository link: https://github.com/txwei3/twei3-hw-pui
