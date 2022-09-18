@@ -44,14 +44,13 @@
           <div class = "glazing"> 
             <div class = "description">
               <p class = "detail-description" >Customize our delicious, hand-made cinnamon roll to your liking!</p>
-              <!-- <p class = "detail-description" id = "detail-description" onclick = "myFunc('red')">Customize our delicious, hand-made cinnamon roll to your liking!</p> -->
             </div>
             <br><br><br>
             <label for = "glaze-option">Glazing:</label>
             <br>
-            <select id = "glaze-option" name = "glaze-option" class = "dropdown-content">
-              <option value = "select-glaze">-- Select Glaze --</option>
-              <option value = "keep-original" id = "keep-original" onclick = "getGlazeOption()">Keep Original</option>
+            <select id = "glaze-option" name = "glaze-option" class = "dropdown-content" onchange = "finalPrice();">
+              <!-- <option value = "select-glaze">-- Select Glaze --</option> -->
+              <option value = "keep-original" id = "keep-original" >Keep Original</option>
               <option value = "sugar-milk">Sugar Milk</option>
               <option value = "vanilla-milk">Vanilla Milk</option>
               <option value = "double-chocolate">Double Chocolate</option>
@@ -63,8 +62,8 @@
           <div class = "size"> 
             <label for = "pack-size">Pack Size:</label>
             <br>
-            <select id = "pack-size" name = "pack-size" class = "dropdown-content">
-              <option value = "select-size">-- Select Size --</option>
+            <select id = "pack-size" name = "pack-size" class = "dropdown-content" onchange = "finalPrice();">
+              <!-- <option value = "select-size">-- Select Size --</option> -->
               <option value = "1">1</option>
               <option value = "3">3</option>
               <option value = "6">6</option>
@@ -75,7 +74,7 @@
           <br><br><br><br>
 
           <div class = "checkout">
-            <span class = "total-cost">$2.49</span>
+            <span class = "total-cost" id = "total-cost">$2.49</span>
             <button class = "add-to-cart" >Add to Cart</button>
           </div>
 

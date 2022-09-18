@@ -163,7 +163,8 @@ option, select {
 }
 
 .checkout{
-    /* display: inline-flex; */
+    display: flex;
+    align-items: center;
     width: 300px;
     margin-right: auto;
     margin-left: auto;
@@ -171,8 +172,8 @@ option, select {
 }
 
 .total-cost {
-    padding-right: 50px;
-    padding-left: 20px;
+    /* padding-right: 30px;
+    padding-left: 20px; */
     text-align: left;
     font-size: 20px;
     font-weight: 700;
