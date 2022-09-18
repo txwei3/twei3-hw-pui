@@ -3,6 +3,7 @@
   <meta charset="UTF-8">
   <title>Detail Page</title>
   <link rel="stylesheet" href="css/detail-css.css">
+  <script src = "js/detail-js.js"></script>
   
 
 
@@ -11,7 +12,7 @@
     <nav class = "navbar">
       <div class = "logo">
         <a href = "./index.html">
-          <img id = "logo" src = "./HW1-assets/logo/logo-01.svg"   alt = "main logo">
+          <img id = "logo" src = "./HW1-assets/logo/logo-01.svg" alt = "main logo">
         </a>
       </div>
       <div class = "header">
@@ -42,14 +43,15 @@
           
           <div class = "glazing"> 
             <div class = "description">
-              <p class = "detail-description">Customize our delicious, hand-made cinnamon roll to your liking!</p>
+              <p class = "detail-description" >Customize our delicious, hand-made cinnamon roll to your liking!</p>
+              <!-- <p class = "detail-description" id = "detail-description" onclick = "myFunc('red')">Customize our delicious, hand-made cinnamon roll to your liking!</p> -->
             </div>
             <br><br><br>
             <label for = "glaze-option">Glazing:</label>
             <br>
             <select id = "glaze-option" name = "glaze-option" class = "dropdown-content">
               <option value = "select-glaze">-- Select Glaze --</option>
-              <option value = "keep-original">Keep Original</option>
+              <option value = "keep-original" id = "keep-original" onclick = "getGlazeOption()">Keep Original</option>
               <option value = "sugar-milk">Sugar Milk</option>
               <option value = "vanilla-milk">Vanilla Milk</option>
               <option value = "double-chocolate">Double Chocolate</option>
@@ -84,9 +86,6 @@
 
     </div>
     
-
-
-
 
   </body>
 
