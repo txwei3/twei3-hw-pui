@@ -1,0 +1,195 @@
+
+/* -------------------Universal----------------------- */
+.logo {
+    padding-top: 10px;
+    padding-left: 40px;
+    width: 400px;
+    height: 400px;
+    flex: 0 1 auto; 
+}
+
+hr {
+    height: 5px;
+    background: black;
+    width: 700px;
+    border: 0px;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-weight: 70;
+    font-size: 20px;
+    text-align:center;
+    color: black;
+}
+
+/* https://freshman.tech/flexbox-navbar/
+nav-bar googling */
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.nav-links {
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    padding-right: 40px;
+    padding-left: 0px;
+}
+
+.nav-item-products, 
+.nav-item-cart {
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.nav-item-products {
+    font-weight: 700;
+    width: 150px;
+}
+
+.nav-item-cart {
+    font-weight: 70;
+    width: 150px;
+}
+
+.page-title {
+    flex-direction: vertical;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 30px;
+    text-align: left;
+}
+
+/* ------------------------------------------------------- */
+
+
+/* --------------------detail----------------------------- */
+.flex-container {
+    display: flex;
+    justify-content:center;
+}
+
+.detail-products {
+    font-weight: 700;
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+
+.detail-cart {
+    font-weight: 70;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.detail-product-header {
+    font-size: 30px;
+    font-weight: 300;
+
+}
+
+.detail-item {
+    margin-right: 65px;
+    text-align: center;
+}
+
+.detail-description {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    text-align: left;
+
+}
+
+.detail-menu-item {
+    width: 650px;
+    height: 650px;
+    border: 3px solid black;
+}
+
+.glazing, .size {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+
+.total-cost, .add-to-cart {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+label {
+    font-size: 20px;
+}
+
+.dropdown-content {
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border: 3px solid black;
+}
+
+option, select {
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.checkout{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+
+.total-cost {
+    /* padding-right: 30px;
+    padding-left: 20px; */
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.add-to-cart {
+    text-align: center;
+    width: 170px;
+    height: 50px;
+    border: 3px solid black;
+    background-color: yellow;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+/* ---------------------------------------------------------- */
