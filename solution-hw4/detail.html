@@ -3,7 +3,9 @@
   <meta charset="UTF-8">
   <title>Detail Page</title>
   <link rel="stylesheet" href="css/detail-css.css">
+  <script src = "js/rollsData.js" defer></script>
   <script src = "js/detail-js.js" defer></script>
+  <script src = "js/cart.js" defer></script>
   
 
 
@@ -24,7 +26,7 @@
         <div class = "page-title">
           <hr>
           <br><br>
-          <h2>Original cinnamon roll</h2>
+          <h2 id = "roll-header-text">Original cinnamon roll</h2>
         </div>
       </div>
     </nav>
@@ -33,7 +35,7 @@
         
         <div class = "detail-item">
           <div class = "picture">
-            <img class = "detail-menu-item" src = "./HW1-assets/products/original-cinnamon-roll.jpg" alt = "original cinnamon roll">
+            <img class = "detail-menu-item" id = "roll-img" src = "./HW1-assets/products/original-cinnamon-roll.jpg" alt = "original cinnamon roll">
           </div>
         </div>
 
@@ -75,7 +77,7 @@
 
           <div class = "checkout">
             <span class = "total-cost" id = "total-cost">$2.49</span>
-            <button class = "add-to-cart" >Add to Cart</button>
+            <button class = "add-to-cart" onclick = "addToCart();">Add to Cart</button>
           </div>
 
         </div>

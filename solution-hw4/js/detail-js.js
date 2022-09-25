@@ -45,7 +45,7 @@ function glazePriceAdjustment() {
             glazePriceAdaption = glaze.adaption[i];
         }
     }
-    //console.log("this is packAdaption", glazePriceAdaption)
+    //console.log("this is glazePriceAdaption", glazePriceAdaption)
     return glazePriceAdaption;
 }
 
@@ -60,17 +60,21 @@ function getPackSize() {
         }
     }
 
-    //console.log("this is sizeAdaption", sizeAdaption);
+    //console.log("this is sizePriceAdaption", sizePriceAdaption);
     return sizePriceAdaption;
 }
 
+
+
+
+
+
 //final calculation
 function finalPrice() {
-    let basePrice = 2.49;
+    let basePrice = rolls[rollType]["basePrice"];
     let glazeAdjustment = glazePriceAdjustment();
     let packAdjustmnet = getPackSize();
 
     finalCost = ((basePrice + glazeAdjustment) * packAdjustmnet).toFixed(2);
-    //console.log(typeof finalCost, finalCost)
-    document.getElementById("total-cost").textContent = "$" + finalCost;    
+    document.getElementById("total-cost").textContent = "$" + finalCost;
 }
