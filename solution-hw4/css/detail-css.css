@@ -1,18 +1,23 @@
-
 /* -------------------Universal----------------------- */
 .logo {
     padding-top: 10px;
     padding-left: 40px;
     width: 400px;
     height: 400px;
-    flex: 0 1 auto; 
 }
 
 hr {
     height: 5px;
     background: black;
-    width: 700px;
     border: 0px;
+}
+
+.header {
+    width: 59%;
+    display: flex;
+    flex-direction: column;   
+    
+
 }
 
 body {
@@ -67,7 +72,7 @@ nav-bar googling */
 }
 
 .page-title {
-    flex-direction: vertical;
+    flex-direction: column;
 }
 
 h2 {

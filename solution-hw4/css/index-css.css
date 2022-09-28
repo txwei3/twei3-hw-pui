@@ -1,17 +1,24 @@
-
 /* -------------------Universal----------------------- */
 .logo {
     padding-top: 10px;
     padding-left: 40px;
     width: 400px;
+    /* width: 34%; */
     height: 400px;
 }
 
 hr {
     height: 5px;
     background: black;
-    width: 700px;
     border: 0px;
+}
+
+.header {
+    width: 59%;
+    display: flex;
+    flex-direction: column;   
+    
+
 }
 
 body {
@@ -66,7 +73,7 @@ nav-bar googling */
 }
 
 .page-title {
-    flex-direction: vertical;
+    flex-direction: column;
 }
 
 h2 {
@@ -120,6 +127,7 @@ is there a way to include border on hover? */
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 20px;
+    padding: 5px;
 }
 
 .item:hover .name{
@@ -127,11 +135,9 @@ is there a way to include border on hover? */
 }
 
 
-/* how do i cause things to not shift when on hover? */
 .item:hover {
     cursor: pointer;
     background-color: yellow;
-    border: 5px solid yellow;
 }
 
 
@@ -146,6 +152,9 @@ is there a way to include border on hover? */
     text-decoration: underline;
     margin-bottom: 7px;
     margin-top: 10px;
+    max-width: 305px;
+    height: 24px;
+    
 }
 
 .price {
