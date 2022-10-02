@@ -1,0 +1,173 @@
+/* -------------------Universal----------------------- */
+.logo {
+    padding-top: 10px;
+    padding-left: 40px;
+    width: 400px;
+    /* width: 34%; */
+    height: 400px;
+}
+
+hr {
+    height: 5px;
+    background: black;
+    border: 0px;
+}
+
+.header {
+    width: 59%;
+    display: flex;
+    flex-direction: column;   
+    
+
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-weight: 70;
+    font-size: 20px;
+    text-align:center;
+    color: black;
+}
+
+/* https://freshman.tech/flexbox-navbar/
+nav-bar googling */
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.nav-links {
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    padding-right: 40px;
+    padding-left: 0px;
+}
+
+.nav-item-products, 
+.nav-item-cart {
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.nav-item-products {
+    font-weight: 700;
+    width: 150px;
+}
+
+.nav-item-cart {
+    font-weight: 70;
+    width: 150px;
+}
+
+.page-title {
+    flex-direction: column;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 30px;
+    text-align: left;
+}
+
+/* ------------------------------------------------------- */
+
+/* -----------------Product Gallery--------------------- */
+
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-products {
+    font-weight: 700;
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+
+.gallery-cart {
+    font-weight: 70;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.menu { 
+    padding-top: 20px;
+    width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* added 5 px to width to accomodate for border when hovering. 
+is there a way to include border on hover? */
+.item {
+    width: 305px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.item:hover .name{
+    font-weight: 700;
+}
+
+
+.item:hover {
+    cursor: pointer;
+    background-color: yellow;
+}
+
+
+.menu-item {
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+}
+
+.name {
+    /* font-weight: 700; */
+    text-decoration: underline;
+    margin-bottom: 7px;
+    margin-top: 10px;
+    max-width: 305px;
+    height: 24px;
+    
+}
+
+.price {
+    margin-top: 7px;
+}
+
+.name, .price{
+    font-size: 20px;
+}
+
+.products:hover {
+    background-color: yellow;
+}
+/* ---------------------------------------------------------- */
+
+
