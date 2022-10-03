@@ -5,22 +5,28 @@ class Roll {
         this.size = packSize;
         this.basePrice = basePrice;
     }
+
 }
 
 
-let cart = [];
 
-const originalRoll = new Roll ("Original", "Sugar Milk", 1, 2.49)
-const walnutRoll = new Roll ("Walnut", "Vanilla Milk", 12, 3.49)
-const raisinRoll = new Roll ("Raisin", "sugar Milk Milk", 3, 2.99)
-const appleRoll = new Roll ("Apple", "Original", 3, 3.49)
+const originalRoll = new Roll ("Original", "Sugar Milk", 1, 2.49);
+const walnutRoll = new Roll ("Walnut", "Vanilla Milk", 12, 3.49);
+const raisinRoll = new Roll ("Raisin", "sugar Milk Milk", 3, 2.99);
+const appleRoll = new Roll ("Apple", "Original", 3, 3.49);
 
 
-cart = [originalRoll, walnutRoll, raisinRoll, appleRoll]
+let cart = [originalRoll, walnutRoll, raisinRoll, appleRoll];
+
+//creating nested dom elements
+//https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
+
+
+let totalMoney = 0;
+
 function updateCart() {
-    let totalMoney = 0;
+
     for (i = 0; i < cart.length; i++) {
-        //console.log(cart[i].type)
 
         //create item container which holds everything
         const itemContainer = document.createElement("div");
@@ -46,7 +52,8 @@ function updateCart() {
         const img = picture.appendChild(document.createElement("img"));
 
         const removeBtn = cartItem.appendChild(document.createElement("button"));
-        removeBtn.setAttribute("class", "remove-btn");
+        removeBtn.setAttribute("id", "remove-btn");
+        removeBtn.addEventListener("click", removeItem)
         removeBtn.textContent = "Remove";
 
 
@@ -88,13 +95,41 @@ function updateCart() {
         //adding everything to the flex-container
         document.getElementById("flex-container-cart").appendChild(itemContainer);
 
+        //update total cost
         totalMoney += cart[i].size * cart[i].basePrice
 
     }
 
     document.getElementById("money").textContent = "$" + totalMoney;
-    console.log(totalMoney)
 }
 
 
 updateCart()
+
+
+//remove parent from child element
+//https://bobbyhadz.com/blog/javascript-remove-parent-element
+
+
+function removeItem() {
+
+    //find the parent of the remove-btn clicked
+    console.log(this);
+    const child = this;
+    const parent = child.closest("div.item");
+    //console.log(parent)
+    
+    //get the cost of the removed element
+    let costOfItem = parent.querySelector(".price-in-cart").textContent;
+    costOfItem = Number(costOfItem.replace("$", ""));
+
+    //get the current total. subtract removed element from total
+    let currentTotal = document.getElementById("money").textContent;
+    currentTotal = (Number(currentTotal.replace("$", "")) - costOfItem).toFixed(2);
+
+    //update current total
+    document.getElementById("money").textContent = "$" + currentTotal;
+
+    //remove parent
+    parent.remove();
+}

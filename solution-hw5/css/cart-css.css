@@ -134,7 +134,7 @@ h2 {
     border: 3px solid black;
 }
 
-.remove-btn {
+#remove-btn {
     font-size: 12px;
     text-decoration: underline;
     font-weight: 700;
