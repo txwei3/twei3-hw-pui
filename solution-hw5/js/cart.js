@@ -15,7 +15,8 @@ class Roll {
 
 
 
-
+let payAmount = document.getElementById("money").innerText;
+//console.log(payAmount)
 let cart = [];
 
 
@@ -31,27 +32,36 @@ function createElement(roll) {
     let template = document.querySelector("#roll-template");
     const clone = template.content.cloneNode(true);
 
-    roll.element = clone.querySelector(".notecard");
+    roll.element = clone.querySelector(".item");
 
     const rollElementList = document.querySelector("#flex-container-cart");
     rollElementList.prepend(roll.element)
 
-    //updateElement(roll);
+    updateElement(roll);
 }
 
 
 
-// function updateElement(roll) {
-//     const rollImg = roll.element.querySelector("#cart-menu-item");
-//     const nameInCart = roll.element.querySelector("#name-in-cart");
-//     const glazeType = roll.element.querySelector("#glazing-type");
-//     const packSizeInCart = roll.element.querySelector("#pack-size-in-cart");
+function updateElement(roll) {
+    //console.log("hello");
+    const rollImg = roll.element.querySelector("#cart-menu-item");
+    const nameInCart = roll.element.querySelector("#name-in-cart");
+    const glazeType = roll.element.querySelector("#glazing-type");
+    const packSizeInCart = roll.element.querySelector("#pack-size-in-cart");
+    const priceInCart = roll.element.querySelector("#price-in-cart");
 
-//     rollImg.src = roll.imageURL;
-//     nameInCart.innerText = roll.type + " Cinnamon Roll";
-//     glazeType.innerText = roll.rollGlazing;
-//     packSizeInCart.innerText = roll.packSize;
-// }
+    rollImg.src = roll.imageURL;
+    nameInCart.innerText = roll.type + " Cinnamon Roll";
+    glazeType.innerText = roll.rollGlazing;
+    packSizeInCart.innerText = roll.packSize;
+    priceInCart.innerText = "$" + roll.basePrice * roll.size;
+    //console.log(priceInCart);
+
+    payAmount += priceInCart.innerText;
+    document.getElementById("money").innerText = payAmount;
+
+    
+}
 
 
 
