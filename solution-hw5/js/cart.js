@@ -16,7 +16,9 @@ class Roll {
 
 
 let payAmount = document.getElementById("money").innerText;
-//console.log(payAmount)
+payAmount = Number(payAmount.replace("$", ""))
+//console.log(typeof payAmount, payAmount)
+
 let cart = [];
 
 
@@ -49,7 +51,7 @@ function updateElement(roll) {
     const glazeType = roll.element.querySelector("#glazing-type");
     const packSizeInCart = roll.element.querySelector("#pack-size-in-cart");
     const priceInCart = roll.element.querySelector("#price-in-cart");
-
+    
     rollImg.src = roll.imageURL;
     nameInCart.innerText = roll.type + " Cinnamon Roll";
     glazeType.innerText = roll.rollGlazing;
@@ -57,12 +59,45 @@ function updateElement(roll) {
     priceInCart.innerText = "$" + roll.basePrice * roll.size;
     //console.log(priceInCart);
 
-    payAmount += priceInCart.innerText;
-    document.getElementById("money").innerText = payAmount;
+    const removeBtn = roll.element.querySelector("#remove-btn");
+    //console.log(removeBtn)
+    removeBtn.addEventListener("click", () => {
+        removeItem(roll);
+    })
 
-    
+
+
+    let tempPriceVar = priceInCart.innerText
+    tempPriceVar = Number(tempPriceVar.replace("$", ""))
+    //console.log(typeof tempPriceVar, tempPriceVar);
+    payAmount += tempPriceVar;
+    document.getElementById("money").innerText = "$" + payAmount;
 }
 
+function removeItem(roll) {
+    //console.log("del")
+    
+
+    const tempItemPrice = roll.basePrice * roll.size
+    console.log(tempItemPrice)
+
+    const tempTotalPrice = document.getElementById("money")
+    //tempTotalPrice = Number(tempTotalPrice.replace("$", ""))
+    console.log(typeof tempTotalPrice, tempTotalPrice)
+
+    // roll.element.remove();
+
+    // const indToRemove = cart.indexOf(roll)
+    // console.log(indToRemove)
+    // if (indToRemove > -1) {
+    //     cart.splice(indToRemove, 1);
+    // }
+    
+    
+
+
+    // console.log(cart)
+}
 
 
 
@@ -73,7 +108,7 @@ const appleRoll = addRoll("Apple", "Original", 3, 3.49, "./HW1-assets/products/a
 
 
 for (i = 0; i < cart.length; i++) {
-    console.log(cart[i]);
+    //console.log(cart[i]);
     createElement(cart[i]);
 }
 
