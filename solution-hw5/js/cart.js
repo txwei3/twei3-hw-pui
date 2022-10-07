@@ -1,10 +1,12 @@
 class Roll {
-    constructor(rollType, rollGlazing, packSize, basePrice, imageURL) {
+    constructor(rollType, rollGlazing, packSize, basePrice, packAdaption, glazeAdaption, imageURL) {
         this.type = rollType;
         this.glazing =  rollGlazing;
         this.size = packSize;
         this.basePrice = basePrice;
         this.imageURL = imageURL;
+        this.psAdaption = packAdaption;
+        this.gAdaption = glazeAdaption;
 
         this.element = null;
     }
@@ -22,8 +24,8 @@ payAmount = Number(payAmount.replace("$", ""))
 let cart = [];
 
 
-function addRoll(rollType, rollGlazing, packSize, basePrice, imageURL) {
-    const roll = new Roll (rollType, rollGlazing, packSize, basePrice, imageURL);
+function addRoll(rollType, rollGlazing, packSize, basePrice, packAdaption, glazeAdaption, imageURL) {
+    const roll = new Roll (rollType, rollGlazing, packSize, basePrice, packAdaption, glazeAdaption, imageURL);
     cart.push(roll);
     return roll;
 }
@@ -56,7 +58,7 @@ function updateElement(roll) {
     nameInCart.innerText = roll.type + " Cinnamon Roll";
     glazeType.innerText = "Glazing: " + roll.glazing;
     packSizeInCart.innerText = "Pack Size: " + roll.size;
-    priceInCart.innerText = "$" + roll.basePrice * roll.size;
+    priceInCart.innerText = "$" + ((roll.basePrice + roll.gAdaption)* roll.psAdaption).toFixed(2);
     //console.log(priceInCart);
 
     const removeBtn = roll.element.querySelector("#remove-btn");
@@ -79,7 +81,7 @@ function removeItem(roll) {
     //console.log("del");
     
 
-    const tempItemPrice = roll.basePrice * roll.size;
+    const tempItemPrice = ((roll.basePrice + roll.gAdaption) * roll.psAdaption).toFixed(2);
     //console.log(tempItemPrice);
 
     let tempTotalPrice = document.getElementById("money").innerText;
@@ -107,10 +109,10 @@ function removeItem(roll) {
 
 
 
-const originalRoll = addRoll("Original", "Sugar Milk", 1, 2.49, "./HW1-assets/products/original-cinnamon-roll.jpg");
-const walnutRoll = addRoll("Walnut", "Vanilla Milk", 12, 3.49, "./HW1-assets/products/walnut-cinnamon-roll.jpg");
-const raisinRoll = addRoll("Raisin", "Sugar Milk", 3, 2.99, "./HW1-assets/products/raisin-cinnamon-roll.jpg");
-const appleRoll = addRoll("Apple", "Original", 3, 3.49, "./HW1-assets/products/apple-cinnamon-roll.jpg");
+const originalRoll = addRoll("Original", "Sugar Milk", 1, 2.49, 1, 0, "./HW1-assets/products/original-cinnamon-roll.jpg");
+const walnutRoll = addRoll("Walnut", "Vanilla Milk", 12, 3.49, 10, 0.5, "./HW1-assets/products/walnut-cinnamon-roll.jpg");
+const raisinRoll = addRoll("Raisin", "Sugar Milk", 3, 2.99, 3, 0, "./HW1-assets/products/raisin-cinnamon-roll.jpg");
+const appleRoll = addRoll("Apple", "Original", 3, 3.49, 3, 0, "./HW1-assets/products/apple-cinnamon-roll.jpg");
 
 
 for (i = 0; i < cart.length; i++) {
