@@ -9,17 +9,21 @@ const size = {
     adaption: [1, 3, 5, 10],
 }
 
+
+//let cart = []
+
 function createCart() {
-    if (localStorage.getItem("storedNotes") == null) {
-        let cart = [];
+    if (localStorage.getItem("cart") == null) {
+        let cart = []
+        console.log("created cart, ", cart)
         return cart
-      }
+    }
     else {
         retreiveFromLocalStorage()
-    }
+    } 
 }
 
-let cart = createCart();
+let cart = createCart()
 
 function addToCart() {
     const rollType = params.get("rolls");
@@ -133,6 +137,3 @@ function saveToLocalStorage() {
     //save to local storage
     localStorage.setItem("cart", cartArrayString);
   }
-
-
-// console.log(saveToLocalStorage())

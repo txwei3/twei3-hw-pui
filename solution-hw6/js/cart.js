@@ -87,7 +87,8 @@ function updateElement(roll) {
     tempPriceVar = Number(tempPriceVar.replace("$", ""))
     //console.log(typeof tempPriceVar, tempPriceVar);
     payAmount += tempPriceVar;
-    document.getElementById("money").innerText = "$" + payAmount;
+    //console.log(payAmount)
+    document.getElementById("money").innerText = "$" + payAmount.toFixed(2);
 }
 
 function removeItem(roll) {
@@ -115,7 +116,7 @@ function removeItem(roll) {
         cart.splice(indToRemove, 1);
     }
     
-    
+    saveToLocalStorage()
 
 
     //console.log(cart)
@@ -134,6 +135,9 @@ for (i = 0; i < cart.length; i++) {
     createElement(cart[i]);
 }
 
-// addEventListener("load", retreiveFromLocalStorage())
 
-console.log(retreiveFromLocalStorage())
+if (localStorage.getItem("cart") != null) {
+    //console.log("hello")
+    retreiveFromLocalStorage()
+}
+
