@@ -14,14 +14,28 @@ class Roll {
 }
 
 
-
+function retreiveFromLocalStorage() {
+    //get the json string from local storage string
+    const cartArrayString = localStorage.getItem("cart");
+  
+    //convert back to array
+    const cartArray = JSON.parse(cartArrayString);
+  
+    //iterating through the array and recreating the item
+    for (const cartData of cartArray) {
+      const cartItem = addRoll(cartData.type, cartData.glazing, cartData.size, cartData.basePrice, cartData.psAdaption, cartData.gAdaption, cartData.imageURL)
+      createElement(cartItem)
+    }
+  
+    //console.log(cartArray);
+  }
 
 
 let payAmount = document.getElementById("money").innerText;
 payAmount = Number(payAmount.replace("$", ""))
 //console.log(typeof payAmount, payAmount)
 
-let cart = [];
+
 
 
 function addRoll(rollType, rollGlazing, packSize, basePrice, packAdaption, glazeAdaption, imageURL) {
@@ -119,3 +133,5 @@ for (i = 0; i < cart.length; i++) {
     //console.log(cart[i]);
     createElement(cart[i]);
 }
+
+// addEventListener("load", retreiveFromLocalStorage())

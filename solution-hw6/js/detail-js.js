@@ -9,9 +9,19 @@ const size = {
     adaption: [1, 3, 5, 10],
 }
 
-//is this the correct implementation for this function?
+function createCart() {
+    if (localStorage.getItem("storedNotes") == null) {
+        let cart = [];
+        return cart
+      }
+    else {
+        retreiveFromLocalStorage()
+    }
+}
+
+let cart = createCart();
+
 function addToCart() {
-    //console.log("hello");
     const rollType = params.get("rolls");
 
     let selectGlazing = document.getElementById("glaze-option");
@@ -22,10 +32,28 @@ function addToCart() {
 
 
     const basePrice = rolls[rollType]["basePrice"];
+    const imageURL = './HW1-assets/products/' + rolls[rollType]["imageFile"];
 
-    const item = new Roll(rollType, glazingText, selectSize, basePrice);
+    let glazeAdaption = 0;
+    for (i=0; i < glaze.option.length; i++) {
+        if (glaze.option[i].toLocaleLowerCase() === glazingText.toLocaleLowerCase()) {
+            glazeAdaption = glaze.adaption[i];
+        }
+    }
+
+    let packAdaption = 1;
+    for (i = 0; i < size.option.length; i++) {
+        if (size.option[i] === selectSize) {
+            packAdaption = size.adaption[i];
+        }
+    }
+
+    
+
+    const item = new Roll(rollType, glazingText, selectSize, basePrice, packAdaption, glazeAdaption, imageURL);
     cart.push(item)
-    console.log(cart)
+    //console.log(cart)
+    saveToLocalStorage()
 }
 
 //setting fields using created objects
@@ -97,5 +125,11 @@ function finalPrice() {
     return finalCost
 }
 
-
-// let finalPrice = finalPrice()
+function saveToLocalStorage() {
+    //convert array to json string
+    const cartArrayString = JSON.stringify(cart);
+    console.log(cartArrayString);
+  
+    //save to local storage
+    localStorage.setItem("cart", cartArrayString);
+  }
