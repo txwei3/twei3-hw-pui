@@ -133,3 +133,6 @@ function saveToLocalStorage() {
     //save to local storage
     localStorage.setItem("cart", cartArrayString);
   }
+
+
+// console.log(saveToLocalStorage())

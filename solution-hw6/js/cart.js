@@ -123,10 +123,10 @@ function removeItem(roll) {
 
 
 
-const originalRoll = addRoll("Original", "Sugar Milk", 1, 2.49, 1, 0, "./HW1-assets/products/original-cinnamon-roll.jpg");
-const walnutRoll = addRoll("Walnut", "Vanilla Milk", 12, 3.49, 10, 0.5, "./HW1-assets/products/walnut-cinnamon-roll.jpg");
-const raisinRoll = addRoll("Raisin", "Sugar Milk", 3, 2.99, 3, 0, "./HW1-assets/products/raisin-cinnamon-roll.jpg");
-const appleRoll = addRoll("Apple", "Original", 3, 3.49, 3, 0, "./HW1-assets/products/apple-cinnamon-roll.jpg");
+// const originalRoll = addRoll("Original", "Sugar Milk", 1, 2.49, 1, 0, "./HW1-assets/products/original-cinnamon-roll.jpg");
+// const walnutRoll = addRoll("Walnut", "Vanilla Milk", 12, 3.49, 10, 0.5, "./HW1-assets/products/walnut-cinnamon-roll.jpg");
+// const raisinRoll = addRoll("Raisin", "Sugar Milk", 3, 2.99, 3, 0, "./HW1-assets/products/raisin-cinnamon-roll.jpg");
+// const appleRoll = addRoll("Apple", "Original", 3, 3.49, 3, 0, "./HW1-assets/products/apple-cinnamon-roll.jpg");
 
 
 for (i = 0; i < cart.length; i++) {
@@ -135,3 +135,5 @@ for (i = 0; i < cart.length; i++) {
 }
 
 // addEventListener("load", retreiveFromLocalStorage())
+
+console.log(retreiveFromLocalStorage())
