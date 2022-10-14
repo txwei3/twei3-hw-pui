@@ -9,21 +9,35 @@ const size = {
     adaption: [1, 3, 5, 10],
 }
 
+class Roll {
+    constructor(rollType, rollGlazing, packSize, basePrice, packAdaption, glazeAdaption, imageURL) {
+        this.type = rollType;
+        this.glazing =  rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
+        this.imageURL = imageURL;
+        this.psAdaption = packAdaption;
+        this.gAdaption = glazeAdaption;
 
-//let cart = []
-
-function createCart() {
-    if (localStorage.getItem("cart") == null) {
-        let cart = []
-        console.log("created cart, ", cart)
-        return cart
+        this.element = null;
     }
-    else {
-        retreiveFromLocalStorage()
-    } 
+
 }
 
-let cart = createCart()
+
+let cart = []
+
+if (localStorage.getItem("cart") != null) {
+    const cartArrayString = localStorage.getItem("cart");
+    const cartArray = JSON.parse(cartArrayString);
+    //console.log(cartArray)
+
+    for (const cartData of cartArray) {
+        cart.push(cartData)
+    }   
+    console.log(localStorage.getItem("cart"))
+}
+
 
 function addToCart() {
     const rollType = params.get("rolls");
@@ -55,6 +69,7 @@ function addToCart() {
     
 
     const item = new Roll(rollType, glazingText, selectSize, basePrice, packAdaption, glazeAdaption, imageURL);
+    //console.log(cart)
     cart.push(item)
     //console.log(cart)
     saveToLocalStorage()
@@ -137,3 +152,5 @@ function saveToLocalStorage() {
     //save to local storage
     localStorage.setItem("cart", cartArrayString);
   }
+
+  

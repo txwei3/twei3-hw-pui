@@ -1,36 +1,3 @@
-class Roll {
-    constructor(rollType, rollGlazing, packSize, basePrice, packAdaption, glazeAdaption, imageURL) {
-        this.type = rollType;
-        this.glazing =  rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice;
-        this.imageURL = imageURL;
-        this.psAdaption = packAdaption;
-        this.gAdaption = glazeAdaption;
-
-        this.element = null;
-    }
-
-}
-
-
-function retreiveFromLocalStorage() {
-    //get the json string from local storage string
-    const cartArrayString = localStorage.getItem("cart");
-  
-    //convert back to array
-    const cartArray = JSON.parse(cartArrayString);
-  
-    //iterating through the array and recreating the item
-    for (const cartData of cartArray) {
-      const cartItem = addRoll(cartData.type, cartData.glazing, cartData.size, cartData.basePrice, cartData.psAdaption, cartData.gAdaption, cartData.imageURL)
-      createElement(cartItem)
-    }
-  
-    //console.log(cartArray);
-  }
-
-
 let payAmount = document.getElementById("money").innerText;
 payAmount = Number(payAmount.replace("$", ""))
 //console.log(typeof payAmount, payAmount)
@@ -135,9 +102,4 @@ for (i = 0; i < cart.length; i++) {
     createElement(cart[i]);
 }
 
-
-if (localStorage.getItem("cart") != null) {
-    //console.log("hello")
-    retreiveFromLocalStorage()
-}
 
