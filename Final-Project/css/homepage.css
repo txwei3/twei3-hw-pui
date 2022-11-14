@@ -7,15 +7,19 @@ body {
     background-color: #ee0000; 
 }
 
+#logoContainer {
+  width: 100%;
+}
+
 .openbtn {
     width: 60px;
 }
 
 .logo {
     max-width: 150px;
-    margin-left: 300px;
+    /* margin-right: 50%; */
+    margin-left: 42%;
 }
-
 /* The sidebar menu https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp */
 .sidebar {
     height: 100%; /* 100% Full-height */

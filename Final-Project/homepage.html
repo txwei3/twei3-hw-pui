@@ -7,14 +7,18 @@
   <body>
 
     <div id = "header" class = "header">
-      <button id = "openbtn" class="openbtn" onclick="openNav()">&#9776;</button>
-      <a href = "./homepage.html">
-        <img id = "logo" class = "logo" src = "./HW1-assets/logo/formula-1-logo-5-3 copy.png" alt = "main logo">
-      </a>
+      <div id = "btnContainer">
+        <button id = "openbtn" class="openbtn" onclick="navState()">&#9776;</button>
+      </div>
+      <div id = "logoContainer">
+        <a href = "./homepage.html">
+          <img id = "logo" class = "logo" src = "./HW1-assets/logo/formula-1-logo-5-3 copy.png" alt = "main logo">
+        </a>
+      </div>
     </div>
 
     <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="navState()">&times;</a>
       <a class = "links" href="drivers-champ.html">Driver's Championship</a>
       <a class = "links" href="constructors-champ.html">Constructor's Championship</a>
       <a class = "links" href="#">Previous Races</a>
