@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <meta charset="UTF-8">
-  <title>Gallery</title>
-  <link rel="stylesheet" href="css/homepage.css">
-  <script src = "js/homepage.js" defer></script>
+
+  <head>
+    <title>F1 2022 Driver's Championship Standings</title>
+
+    <!-- boostrap stuff -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" defer></script>
+    <!--  -->
+    
+    <link rel="stylesheet" href="css/homepage.css">
+    <script src = "js/homepage.js" defer></script>
+
+  </head>
   <body>
 
+    
+    <!-- upper header/side nav bar -->
     <div id = "header" class = "header">
       <div id = "btnContainer">
         <button id = "openbtn" class="openbtn" onclick="navState()">&#9776;</button>
@@ -19,14 +31,31 @@
 
     <div id="mySidebar" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="navState()">&times;</a>
-      <a class = "links" href="drivers-champ.html">Driver's Championship</a>
+      <a class = "links" href="homepage.html">Driver's Championship</a>
       <a class = "links" href="constructors-champ.html">Constructor's Championship</a>
       <a class = "links" href="#">Previous Races</a>
     </div>
+    <!--  -->
 
+
+    <!-- main body content -->
     <div id="main">
-      <h2>Welcome to my PUI Final Project on F1</h2>
+      <h2>F1 2022 Driver's Championship Standings</h2>
       <p>Content...</p>
+
+
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          [Driver Name]
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+
+
     </div>
 
 

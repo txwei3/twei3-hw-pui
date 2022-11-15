@@ -83,3 +83,23 @@ body {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
+
+
+
+  /* ----------------------- */
+
+
+
+#main {
+  width: 60%;
+  margin: auto;
+}
+
+#dropdownMenuButton {
+  width: 100%;
+}
+
+
+.dropdown-menu.show {
+  width: 100%;
+}
