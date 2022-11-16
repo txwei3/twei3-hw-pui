@@ -32,6 +32,27 @@ function navState() {
 
 // ----------------------------
 
+//---creating the dropdowns for the drivers---
+
+var settings = {
+  "url": "http://ergast.com/api/f1/2022/driverStandings.json",
+  "method": "GET",
+  "timeout": 0,
+};
+
+var positionList; // for the driver standings
+var infoList; // for the driver information
+
+
+$.ajax(settings).done(function (response) {
+  //console.log(response);
+  //console.log(typeof(response))
+  let temp = response.MRData.StandingsTable.StandingsLists[0]
+  positionList = temp.DriverStandings
+  //console.log(typeof(positionList), positionList[0])
+  return positionList
+});
+
 
 class Driver {
   constructor(driverName, driverWins, driverPoints, driverPic, driverBio, interestingContent) {
@@ -49,7 +70,17 @@ class Driver {
 let driverList = [];
 
 function addDriver(driverName, driverWins, driverPoints, driverPic, driverBio, interestingContent) {
-  const driver = new Driver(driverName, driverWins, driverPoints, driverPic, driverBio, interestingContent);
+  let dName = driverName;
+  let dWins = driverWins;
+  let dPoints = driverPoints;
+
+  for (let i = 0; i < positionList.length; i++) {
+    dName = positionList[0].Driver.givenName + positionList[0].Driver.familyName //first name + last name
+    dPoints = positionList[0].points // no. points
+    dWins = positionList[0].wins // no. wins
+  }
+
+  const driver = new Driver(dName, dWins, dPoints, driverPic, driverBio, interestingContent);
   driverList.push(driver);
   return driver;
 }
@@ -82,16 +113,16 @@ function updateElement(driver) {
   content.innerText = driver.content;
 }
 
-const mVer = addDriver("M. Verstappen", 14, 429, "./HW1-assets/driverPictures/m_Verstappen.jpg", "hello", "beunos dias")
-const cPer = addDriver("C. Perez", 14, 429, "./HW1-assets/driverPictures/m_Verstappen.jpg", "hello", "beunos dias")
-const cLec = addDriver("C. LeClerc", 14, 429, "./HW1-assets/driverPictures/m_Verstappen.jpg", "hello", "beunos dias")
+// const mVer = addDriver("M. Verstappen", 14, 429, "./HW1-assets/driverPictures/m_Verstappen.jpg", "hello", "beunos dias")
+// const cPer = addDriver("C. Perez", 14, 429, "./HW1-assets/driverPictures/m_Verstappen.jpg", "hello", "beunos dias")
+// const cLec = addDriver("C. LeClerc", 14, 429, "./HW1-assets/driverPictures/m_Verstappen.jpg", "hello", "beunos dias")
 
 
 
-for (let i = 0; i < driverList.length; i++) {
-  console.log(driverList[i]);
-  createElement(driverList[i]);
-}
+// for (let i = 0; i < driverList.length; i++) {
+//   //console.log(driverList[i]);
+//   createElement(driverList[i]);
+// }
 
 
 
