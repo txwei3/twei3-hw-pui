@@ -56,33 +56,37 @@
 
       
 
+      <div class = "driver-list" id = "driver-list">
 
+        <template id = "dropdown-template">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class = "button-items" id="button-item-name">[Driver Name]</div>
+              <div class = "button-items" id="button-item-wins">[Wins]</div>
+              <div class = "button-items" id="button-item-points">[Points]</div>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <!-- <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a> -->
+              <div class="biography">
+                <p id = "biography-header">Biography</p>
+                <div class="dropdown-item">
+                  <img id = "bio-img" class = "bio-img" src = "./HW1-assets/logo/formula-1-logo-5-3.png" alt = "main logo">
+                </div>
+                <div class="dropdown-item">
+                  <p id = "bio-text">bio text</p>
+                </div>
+              </div>
+                        
+              <div class="interesting-content">
+                <p id = "interesting-content">some interesting content</p>
+              </div>
+            </div>
+          </div>
+        </template>
 
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <div class = "button-items" id="button-item-name">[Driver Name]</div>
-          <div class = "button-items" id="button-item-wins">[Wins]</div>
-          <div class = "button-items" id="button-item-points">[Points]</div>
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <!-- <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a> -->
-          <div class="dropdown-item">
-            bio
-            <div class="dropdown-item">
-              <img id = "bioimg" class = "bio-img" src = "./HW1-assets/logo/formula-1-logo-5-3.png" alt = "main logo">
-            </div>
-            <div class="dropdown-item">
-              bio text
-            </div>
-            
-          </div>
-          <div class="dropdown-item">
-            some interesting content
-          </div>
-        </div>
-      </div>
+      </div>  
 
 
     </div>
