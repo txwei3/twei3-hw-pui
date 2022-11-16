@@ -1,3 +1,4 @@
+/* --------upper header------ */
 body {
     margin: 0px;
 }
@@ -20,6 +21,12 @@ body {
     /* margin-right: 50%; */
     margin-left: 42%;
 }
+/* ------------------------------ */
+
+
+
+/* -------- side bar ------------ */
+
 /* The sidebar menu https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp */
 .sidebar {
     height: 100%; /* 100% Full-height */
@@ -84,22 +91,75 @@ body {
     .sidebar a {font-size: 18px;}
   }
 
+/* ------------category item labels--------------- */
 
+.categories {
+  display: flex;
+  justify-content: space-between;
+}
 
-  /* ----------------------- */
+#category-item-name {
+  margin-left: 5%;
+}
+
+#category-item-points {
+  margin-right: 12%;
+}
+
+#category-item-wins {
+  margin-left: 29%;
+}
+
+/* ----------------------- */
 
 
 
 #main {
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 
 #dropdownMenuButton {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 
 .dropdown-menu.show {
   width: 100%;
 }
+
+#button-item-name {
+  margin-left: 3%;
+}
+
+#button-item-wins {
+  margin-left: 31%;
+}
+
+#button-item-points {
+  margin-left: 9%;
+}
+
+/* .dropdown-toggle {
+  height: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+} */
+
+
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.bio-img {
+  max-width: 150px;
+  /* margin-right: 50%; */
+  /* margin-left: 42%; */
+}
+/* ---------------------------- */
+
+

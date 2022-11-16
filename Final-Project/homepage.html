@@ -41,17 +41,46 @@
     <!-- main body content -->
     <div id="main">
       <h2>F1 2022 Driver's Championship Standings</h2>
-      <p>Content...</p>
+      <br>
+      <br>
+      <div class = "categories">
+        <!-- <ul>
+          <li>Name</li>
+          <li>Points</li>
+          <li>Wins</li>
+        </ul> -->
+        <div class = "category-items" id = "category-item-name">Name</div>
+        <div class = "category-items" id = "category-item-wins">Wins</div>
+        <div class = "category-items" id = "category-item-points">Points</div>
+      </div>
+
+      
+
 
 
       <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          [Driver Name]
+          <div class = "button-items" id="button-item-name">[Driver Name]</div>
+          <div class = "button-items" id="button-item-wins">[Wins]</div>
+          <div class = "button-items" id="button-item-points">[Points]</div>
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Action</a>
+          <!-- <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Something else here</a> -->
+          <div class="dropdown-item">
+            bio
+            <div class="dropdown-item">
+              <img id = "bioimg" class = "bio-img" src = "./HW1-assets/logo/formula-1-logo-5-3.png" alt = "main logo">
+            </div>
+            <div class="dropdown-item">
+              bio text
+            </div>
+            
+          </div>
+          <div class="dropdown-item">
+            some interesting content
+          </div>
         </div>
       </div>
 
