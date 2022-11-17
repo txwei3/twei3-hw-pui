@@ -12,7 +12,9 @@
     <!--  -->
     
     <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/universal.css">
     <script src = "js/homepage.js" defer></script>
+    <script src = "js/universal.js" defer></script>
 
   </head>
   <body>
@@ -33,7 +35,7 @@
     <div id="mySidebar" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="navState()">&times;</a>
       <a class = "links" href="homepage.html">Driver's Championship</a>
-      <a class = "links" href="constructors-champ.html">Constructor's Championship</a>
+      <a class = "links" href="constructors.html">Constructor's Championship</a>
       <a class = "links" href="#">Previous Races</a>
     </div>
     <!--  -->
@@ -57,7 +59,7 @@
 
       
 
-      <div class = "driver-list" id = "driver-list">
+      <div class = "driver-list" id = "driver-list" scrolling="auto">
 
         <template id = "dropdown-template">
           <div class="dropdown">
@@ -88,8 +90,6 @@
         </template>
 
       </div>  
-
-
     </div>
 
 
