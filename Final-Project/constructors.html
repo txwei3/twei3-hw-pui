@@ -11,10 +11,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
     <!--  -->
     
-    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/constructor.css">
     <link rel="stylesheet" href="css/universal.css">
     <!-- <script src = "js/homepage.js" defer></script> -->
     <script src = "js/universal.js" defer></script>
+    <script src = "js/constructors.js" defer></script>
 
   </head>
   <body>
@@ -34,23 +35,57 @@
     <a href="javascript:void(0)" class="closebtn" onclick="navState()">&times;</a>
     <a class = "links" href="homepage.html">Driver's Championship</a>
     <a class = "links" href="constructors.html">Constructor's Championship</a>
-    <a class = "links" href="#">Previous Races</a>
+    <a class = "links" href="#">Fun Visualizations</a>
     </div>
     
     <div id="main">
-        <h2>F1 2022 Constructors's Championship Standings</h2>
-        <br>
-        <br>
-        <div class = "categories">
-            <!-- <ul>
-            <li>Name</li>
-            <li>Points</li>
-            <li>Wins</li>
-            </ul> -->
-            <div class = "category-items" id = "category-item-name">Name</div>
-            <div class = "category-items" id = "category-item-wins">Wins</div>
-            <div class = "category-items" id = "category-item-points">Points</div>
-        </div>
+      <h2>F1 2022 Constructors's Championship Standings</h2>
+      <br>
+      <br>
+      <div class = "categories">
+          <!-- <ul>
+          <li>Name</li>
+          <li>Points</li>
+          <li>Wins</li>
+          </ul> -->
+          <div class = "category-items" id = "category-item-name">Name</div>
+          <div class = "category-items" id = "category-item-wins">Wins</div>
+          <div class = "category-items" id = "category-item-points">Points</div>
+      </div>
+
+
+      <div class = "constructor-list" id = "constructor-list" scrolling="auto">
+
+        <template id = "dropdown-template">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class = "button-items" id="button-item-name">[Driver Name]</div>
+              <div class = "button-items" id="button-item-wins">[Wins]</div>
+              <div class = "button-items" id="button-item-points">[Points]</div>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <!-- <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a> -->
+              <div class="biography">
+                <p id = "biography-header">Biography</p>
+                <div class="dropdown-item">
+                  <img id = "bio-img" class = "bio-img" src = "./HW1-assets/logo/formula-1-logo-5-3.png" alt = "main logo">
+                </div>
+                <div class="dropdown-item">
+                  <p id = "bio-text">bio text</p>
+                </div>
+              </div>
+                        
+              <div class="interesting-content">
+                <p id = "interesting-content">some interesting content</p>
+              </div>
+            </div>
+          </div>
+        </template>
+
+      </div>  
+
 
     </div>
 
