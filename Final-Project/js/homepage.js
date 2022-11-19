@@ -18,7 +18,6 @@ $.ajax(settings).done(function (response) {
 });
 
 
-
 class Driver {
   constructor(driverName, driverWins, driverPoints, driverPic, driverBio, interestingContent) {
     this.name = driverName;
@@ -68,6 +67,7 @@ function updateElement(driver) {
   bio.innerText = driver.bio;
   content.innerText = driver.content;
 }
+
 
 
 function getInfo() {
