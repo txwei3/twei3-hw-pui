@@ -10,10 +10,12 @@ var positionList; // for the driver standings
 var totalNumDrivers = 0; // total number of drivers
 
 $.ajax(settings).done(function (response) {
-  //console.log(response);
+  console.log(response);
   let temp = response.MRData.StandingsTable.StandingsLists[0];
   positionList = temp.DriverStandings;
   totalNumDrivers = response.MRData.total;
+  getInfo()
+  loadInfo()
   return positionList
 });
 
@@ -96,8 +98,7 @@ function loadInfo() {
   console.log("there")
 }
 
-getInfo()
-loadInfo()
+
 
 
 // const mVer = addDriver("M. Verstappen", 14, 429, "./HW1-assets/driverPictures/m_Verstappen.jpg", "hello", "beunos dias")
