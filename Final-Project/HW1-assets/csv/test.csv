@@ -1,11 +1,26 @@
 race,driver,n
-Season Starts,VER,0
-Season Starts,LEC,0
-Season Starts,PER,0
-Season Starts,RUS,0
-Season Starts,HAM,0
-Season Starts,SAI,0
-Season Starts,NOR,0
+Season Start,VER,0
+Season Start,LEC,0
+Season Start,PER,0
+Season Start,RUS,0
+Season Start,HAM,0
+Season Start,SAI,0
+Season Start,NOR,0
+Season Start,OCO,0
+Season Start,ALO,0
+Season Start,BOT,0
+Season Start,VET,0
+Season Start,RIC,0
+Season Start,MAG,0
+Season Start,GAS,0
+Season Start,STR,0
+Season Start,SCH,0
+Season Start,TSU,0
+Season Start,ZHO,0
+Season Start,ALB,0
+Season Start,LAT,0
+Season Start,VRS,0
+Season Start,HUL,0
 Bharain Gp,VER,0
 Bharain Gp,LEC,26
 Bharain Gp,PER,0
@@ -13,31 +28,502 @@ Bharain Gp,RUS,12
 Bharain Gp,HAM,15
 Bharain Gp,SAI,18
 Bharain Gp,NOR,0
+Bharain Gp,OCO,6
+Bharain Gp,ALO,2
+Bharain Gp,BOT,8
+Bharain Gp,VET,0
+Bharain Gp,RIC,0
+Bharain Gp,MAG,10
+Bharain Gp,GAS,0
+Bharain Gp,STR,0
+Bharain Gp,SCH,0
+Bharain Gp,TSU,4
+Bharain Gp,ZHO,1
+Bharain Gp,ALB,0
+Bharain Gp,LAT,0
+Bharain Gp,VRS,0
+Bharain Gp,HUL,0
 Saudi Arabian GP,VER,25
-Saudi Arabian GP,LEC,49
+Saudi Arabian GP,LEC,45
 Saudi Arabian GP,PER,12
 Saudi Arabian GP,RUS,22
 Saudi Arabian GP,HAM,16
 Saudi Arabian GP,SAI,33
 Saudi Arabian GP,NOR,6
+Saudi Arabian GP,OCO,14
+Saudi Arabian GP,ALO,2
+Saudi Arabian GP,BOT,8
+Saudi Arabian GP,VET,0
+Saudi Arabian GP,RIC,0
+Saudi Arabian GP,MAG,12
+Saudi Arabian GP,GAS,4
+Saudi Arabian GP,STR,0
+Saudi Arabian GP,SCH,0
+Saudi Arabian GP,TSU,4
+Saudi Arabian GP,ZHO,1
+Saudi Arabian GP,ALB,0
+Saudi Arabian GP,LAT,0
+Saudi Arabian GP,VRS,0
+Saudi Arabian GP,HUL,0
 Australian GP,VER,25
 Australian GP,LEC,71
 Australian GP,PER,30
 Australian GP,RUS,37
 Australian GP,HAM,28
-Australian GP,SAI,38
-Australian GP,NOR,35
+Australian GP,SAI,33
+Australian GP,NOR,16
+Australian GP,OCO,20
+Australian GP,ALO,2
+Australian GP,BOT,12
+Australian GP,VET,0
+Australian GP,RIC,8
+Australian GP,MAG,12
+Australian GP,GAS,6
+Australian GP,STR,1
+Australian GP,SCH,0
+Australian GP,TSU,4
+Australian GP,ZHO,1
+Australian GP,ALB,1
+Australian GP,LAT,0
+Australian GP,VRS,0
+Australian GP,HUL,0
 Emilia Romagna GP,VER,59
 Emilia Romagna GP,LEC,86
-Emilia Romagna GP,RUS,54
-Emilia Romagna GP,PER,49
+Emilia Romagna GP,PER,54
+Emilia Romagna GP,RUS,49
 Emilia Romagna GP,HAM,28
 Emilia Romagna GP,SAI,38
 Emilia Romagna GP,NOR,35
-Miami,VER,85
-Miami,LEC,104
-Miami,RUS,66
-Miami,PER,59
-Miami,HAM,36
-Miami,NOR,53
-Miami,SAI,35
+Emilia Romagna GP,OCO,20
+Emilia Romagna GP,ALO,2
+Emilia Romagna GP,BOT,24
+Emilia Romagna GP,VET,4
+Emilia Romagna GP,RIC,11
+Emilia Romagna GP,MAG,15
+Emilia Romagna GP,GAS,6
+Emilia Romagna GP,STR,1
+Emilia Romagna GP,SCH,0
+Emilia Romagna GP,TSU,10
+Emilia Romagna GP,ZHO,1
+Emilia Romagna GP,ALB,1
+Emilia Romagna GP,LAT,0
+Emilia Romagna GP,VRS,0
+Emilia Romagna GP,HUL,0
+Miami GPs,VER,85
+Miami GPs,LEC,104
+Miami GPs,PER,66
+Miami GPs,RUS,59
+Miami GPs,HAM,36
+Miami GPs,SAI,53
+Miami GPs,NOR,35
+Miami GPs,OCO,24
+Miami GPs,ALO,2
+Miami GPs,BOT,30
+Miami GPs,VET,4
+Miami GPs,RIC,11
+Miami GPs,MAG,15
+Miami GPs,GAS,6
+Miami GPs,STR,2
+Miami GPs,SCH,0
+Miami GPs,TSU,10
+Miami GPs,ZHO,1
+Miami GPs,ALB,3
+Miami GPs,LAT,0
+Miami GPs,VRS,0
+Miami GPs,HUL,0
+Spanis GP,VER,110
+Spanis GP,LEC,104
+Spanis GP,PER,85
+Spanis GP,RUS,74
+Spanis GP,HAM,46
+Spanis GP,SAI,65
+Spanis GP,NOR,39
+Spanis GP,OCO,30
+Spanis GP,ALO,4
+Spanis GP,BOT,38
+Spanis GP,VET,4
+Spanis GP,RIC,11
+Spanis GP,MAG,15
+Spanis GP,GAS,6
+Spanis GP,STR,2
+Spanis GP,SCH,0
+Spanis GP,TSU,11
+Spanis GP,ZHO,1
+Spanis GP,ALB,3
+Spanis GP,LAT,0
+Spanis GP,VRS,0
+Spanis GP,HUL,0
+Monaco GP,VER,125
+Monaco GP,LEC,116
+Monaco GP,PER,110
+Monaco GP,RUS,84
+Monaco GP,HAM,50
+Monaco GP,SAI,83
+Monaco GP,NOR,48
+Monaco GP,OCO,30
+Monaco GP,ALO,10
+Monaco GP,BOT,40
+Monaco GP,VET,5
+Monaco GP,RIC,11
+Monaco GP,MAG,15
+Monaco GP,GAS,6
+Monaco GP,STR,2
+Monaco GP,SCH,0
+Monaco GP,TSU,11
+Monaco GP,ZHO,1
+Monaco GP,ALB,3
+Monaco GP,LAT,0
+Monaco GP,VRS,0
+Monaco GP,HUL,0
+Azerbaijan GP,VER,150
+Azerbaijan GP,LEC,116
+Azerbaijan GP,PER,129
+Azerbaijan GP,RUS,99
+Azerbaijan GP,HAM,62
+Azerbaijan GP,SAI,83
+Azerbaijan GP,NOR,50
+Azerbaijan GP,OCO,31
+Azerbaijan GP,ALO,16
+Azerbaijan GP,BOT,40
+Azerbaijan GP,VET,13
+Azerbaijan GP,RIC,15
+Azerbaijan GP,MAG,15
+Azerbaijan GP,GAS,16
+Azerbaijan GP,STR,2
+Azerbaijan GP,SCH,0
+Azerbaijan GP,TSU,11
+Azerbaijan GP,ZHO,1
+Azerbaijan GP,ALB,3
+Azerbaijan GP,LAT,0
+Azerbaijan GP,VRS,0
+Azerbaijan GP,HUL,0
+Canada GP,VER,175
+Canada GP,LEC,126
+Canada GP,PER,129
+Canada GP,RUS,111
+Canada GP,HAM,77
+Canada GP,SAI,102
+Canada GP,NOR,50
+Canada GP,OCO,39
+Canada GP,ALO,18
+Canada GP,BOT,46
+Canada GP,VET,13
+Canada GP,RIC,15
+Canada GP,MAG,15
+Canada GP,GAS,16
+Canada GP,STR,3
+Canada GP,SCH,0
+Canada GP,TSU,11
+Canada GP,ZHO,5
+Canada GP,ALB,3
+Canada GP,LAT,0
+Canada GP,VRS,0
+Canada GP,HUL,0
+British GP,VER,181
+British GP,LEC,138
+British GP,PER,147
+British GP,RUS,111
+British GP,HAM,93
+British GP,SAI,127
+British GP,NOR,58
+British GP,OCO,39
+British GP,ALO,28
+British GP,BOT,46
+British GP,VET,15
+British GP,RIC,15
+British GP,MAG,16
+British GP,GAS,16
+British GP,STR,3
+British GP,SCH,4
+British GP,TSU,11
+British GP,ZHO,5
+British GP,ALB,3
+British GP,LAT,0
+British GP,VRS,0
+British GP,HUL,0
+Austrian GP,VER,208
+Austrian GP,LEC,170
+Austrian GP,PER,151
+Austrian GP,RUS,128
+Austrian GP,HAM,109
+Austrian GP,SAI,133
+Austrian GP,NOR,64
+Austrian GP,OCO,52
+Austrian GP,ALO,29
+Austrian GP,BOT,46
+Austrian GP,VET,15
+Austrian GP,RIC,17
+Austrian GP,MAG,22
+Austrian GP,GAS,16
+Austrian GP,STR,3
+Austrian GP,SCH,12
+Austrian GP,TSU,11
+Austrian GP,ZHO,5
+Austrian GP,ALB,3
+Austrian GP,LAT,0
+Austrian GP,VRS,0
+Austrian GP,HUL,0
+French GP,VER,233
+French GP,LEC,170
+French GP,PER,163
+French GP,RUS,143
+French GP,HAM,127
+French GP,SAI,144
+French GP,NOR,70
+French GP,OCO,56
+French GP,ALO,37
+French GP,BOT,46
+French GP,VET,15
+French GP,RIC,19
+French GP,MAG,22
+French GP,GAS,16
+French GP,STR,4
+French GP,SCH,12
+French GP,TSU,11
+French GP,ZHO,5
+French GP,ALB,3
+French GP,LAT,0
+French GP,VRS,0
+French GP,HUL,0
+Hungarian GP,VER,258
+Hungarian GP,LEC,178
+Hungarian GP,PER,173
+Hungarian GP,RUS,158
+Hungarian GP,HAM,146
+Hungarian GP,SAI,156
+Hungarian GP,NOR,76
+Hungarian GP,OCO,58
+Hungarian GP,ALO,41
+Hungarian GP,BOT,46
+Hungarian GP,VET,16
+Hungarian GP,RIC,19
+Hungarian GP,MAG,22
+Hungarian GP,GAS,16
+Hungarian GP,STR,4
+Hungarian GP,SCH,12
+Hungarian GP,TSU,11
+Hungarian GP,ZHO,5
+Hungarian GP,ALB,3
+Hungarian GP,LAT,0
+Hungarian GP,VRS,0
+Hungarian GP,HUL,0
+Belgian GP,VER,284
+Belgian GP,LEC,186
+Belgian GP,PER,191
+Belgian GP,RUS,170
+Belgian GP,HAM,146
+Belgian GP,SAI,171
+Belgian GP,NOR,76
+Belgian GP,OCO,64
+Belgian GP,ALO,51
+Belgian GP,BOT,46
+Belgian GP,VET,20
+Belgian GP,RIC,19
+Belgian GP,MAG,22
+Belgian GP,GAS,18
+Belgian GP,STR,4
+Belgian GP,SCH,12
+Belgian GP,TSU,11
+Belgian GP,ZHO,5
+Belgian GP,ALB,4
+Belgian GP,LAT,0
+Belgian GP,VRS,0
+Belgian GP,HUL,0
+Dutch GP,VER,310
+Dutch GP,LEC,201
+Dutch GP,PER,201
+Dutch GP,RUS,188
+Dutch GP,HAM,158
+Dutch GP,SAI,175
+Dutch GP,NOR,82
+Dutch GP,OCO,66
+Dutch GP,ALO,59
+Dutch GP,BOT,46
+Dutch GP,VET,20
+Dutch GP,RIC,19
+Dutch GP,MAG,22
+Dutch GP,GAS,18
+Dutch GP,STR,5
+Dutch GP,SCH,12
+Dutch GP,TSU,11
+Dutch GP,ZHO,5
+Dutch GP,ALB,4
+Dutch GP,LAT,0
+Dutch GP,VRS,0
+Dutch GP,HUL,0
+Italian GP,VER,335
+Italian GP,LEC,219
+Italian GP,PER,210
+Italian GP,RUS,203
+Italian GP,HAM,168
+Italian GP,SAI,187
+Italian GP,NOR,88
+Italian GP,OCO,66
+Italian GP,ALO,59
+Italian GP,BOT,46
+Italian GP,VET,20
+Italian GP,RIC,19
+Italian GP,MAG,22
+Italian GP,GAS,22
+Italian GP,STR,5
+Italian GP,SCH,12
+Italian GP,TSU,11
+Italian GP,ZHO,6
+Italian GP,ALB,4
+Italian GP,LAT,0
+Italian GP,VRS,2
+Italian GP,HUL,0
+Russian GP,VER,335
+Russian GP,LEC,219
+Russian GP,PER,210
+Russian GP,RUS,203
+Russian GP,HAM,168
+Russian GP,SAI,187
+Russian GP,NOR,88
+Russian GP,OCO,66
+Russian GP,ALO,59
+Russian GP,BOT,46
+Russian GP,VET,20
+Russian GP,RIC,19
+Russian GP,MAG,22
+Russian GP,GAS,22
+Russian GP,STR,5
+Russian GP,SCH,12
+Russian GP,TSU,11
+Russian GP,ZHO,6
+Russian GP,ALB,4
+Russian GP,LAT,0
+Russian GP,VRS,2
+Russian GP,HUL,0
+Singapore GP,VER,341
+Singapore GP,LEC,237
+Singapore GP,PER,235
+Singapore GP,RUS,203
+Singapore GP,HAM,170
+Singapore GP,SAI,187
+Singapore GP,NOR,100
+Singapore GP,OCO,66
+Singapore GP,ALO,59
+Singapore GP,BOT,46
+Singapore GP,VET,24
+Singapore GP,RIC,29
+Singapore GP,MAG,22
+Singapore GP,GAS,23
+Singapore GP,STR,13
+Singapore GP,SCH,12
+Singapore GP,TSU,11
+Singapore GP,ZHO,6
+Singapore GP,ALB,4
+Singapore GP,LAT,0
+Singapore GP,VRS,2
+Singapore GP,HUL,0
+Japanese GP,VER,366
+Japanese GP,LEC,252
+Japanese GP,PER,253
+Japanese GP,RUS,207
+Japanese GP,HAM,180
+Japanese GP,SAI,202
+Japanese GP,NOR,101
+Japanese GP,OCO,78
+Japanese GP,ALO,65
+Japanese GP,BOT,46
+Japanese GP,VET,32
+Japanese GP,RIC,29
+Japanese GP,MAG,22
+Japanese GP,GAS,23
+Japanese GP,STR,13
+Japanese GP,SCH,12
+Japanese GP,TSU,11
+Japanese GP,ZHO,6
+Japanese GP,ALB,4
+Japanese GP,LAT,2
+Japanese GP,VRS,2
+Japanese GP,HUL,0
+United States GP,VER,391
+United States GP,LEC,267
+United States GP,PER,265
+United States GP,RUS,218
+United States GP,HAM,198
+United States GP,SAI,202
+United States GP,NOR,109
+United States GP,OCO,78
+United States GP,ALO,71
+United States GP,BOT,46
+United States GP,VET,36
+United States GP,RIC,29
+United States GP,MAG,24
+United States GP,GAS,23
+United States GP,STR,13
+United States GP,SCH,12
+United States GP,TSU,12
+United States GP,ZHO,6
+United States GP,ALB,4
+United States GP,LAT,2
+United States GP,VRS,2
+United States GP,HUL,0
+Mexico GP,VER,416
+Mexico GP,LEC,275
+Mexico GP,PER,280
+Mexico GP,RUS,231
+Mexico GP,HAM,216
+Mexico GP,SAI,212
+Mexico GP,NOR,111
+Mexico GP,OCO,82
+Mexico GP,ALO,71
+Mexico GP,BOT,47
+Mexico GP,VET,36
+Mexico GP,RIC,35
+Mexico GP,MAG,24
+Mexico GP,GAS,23
+Mexico GP,STR,13
+Mexico GP,SCH,12
+Mexico GP,TSU,12
+Mexico GP,ZHO,6
+Mexico GP,ALB,4
+Mexico GP,LAT,2
+Mexico GP,VRS,2
+Mexico GP,HUL,0
+Brazil GP,VER,429
+Brazil GP,LEC,290
+Brazil GP,PER,290
+Brazil GP,RUS,265
+Brazil GP,HAM,240
+Brazil GP,SAI,234
+Brazil GP,NOR,113
+Brazil GP,OCO,86
+Brazil GP,ALO,81
+Brazil GP,BOT,49
+Brazil GP,VET,36
+Brazil GP,RIC,35
+Brazil GP,MAG,25
+Brazil GP,GAS,23
+Brazil GP,STR,14
+Brazil GP,SCH,12
+Brazil GP,TSU,12
+Brazil GP,ZHO,6
+Brazil GP,ALB,4
+Brazil GP,LAT,2
+Brazil GP,VRS,2
+Brazil GP,HUL,0
+Abu Dhabi GP,VER,454
+Abu Dhabi GP,LEC,308
+Abu Dhabi GP,PER,305
+Abu Dhabi GP,RUS,275
+Abu Dhabi GP,HAM,240
+Abu Dhabi GP,SAI,246
+Abu Dhabi GP,NOR,122
+Abu Dhabi GP,OCO,92
+Abu Dhabi GP,ALO,81
+Abu Dhabi GP,BOT,49
+Abu Dhabi GP,VET,37
+Abu Dhabi GP,RIC,37
+Abu Dhabi GP,MAG,25
+Abu Dhabi GP,GAS,23
+Abu Dhabi GP,STR,18
+Abu Dhabi GP,SCH,12
+Abu Dhabi GP,TSU,12
+Abu Dhabi GP,ZHO,6
+Abu Dhabi GP,ALB,4
+Abu Dhabi GP,LAT,2
+Abu Dhabi GP,VRS,2
+Abu Dhabi GP,HUL,0
