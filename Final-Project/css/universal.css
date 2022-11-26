@@ -93,11 +93,18 @@ width: 100%;
 .categories {
   display: flex;
   justify-content: space-between;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
-#category-item-name {
+/* #category-item-name {
   width: 30%;
-  margin-left: 5%;
+  margin-left: 4%;
+}
+
+#category-item-position {
+  width: 15%;
+  margin-left: 2%;
 }
 
 #category-item-points {
@@ -107,8 +114,8 @@ width: 100%;
 
 #category-item-wins {
   width: 10%;
-  margin-left: 25%;
-}
+  margin-left: 5%;
+} */
 
 /* ----dropdown--- */
 #main {
@@ -120,7 +127,7 @@ width: 100%;
   margin-bottom: 10px
 }
 
-#dropdownMenuButton {
+/* #dropdownMenuButton {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -138,4 +145,4 @@ width: 100%;
 *::after {
 box-sizing: border-box;
 margin-top: 10px;
-}
+} */

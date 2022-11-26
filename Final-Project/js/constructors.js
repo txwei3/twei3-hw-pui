@@ -1,11 +1,20 @@
+$('.accordian-body').on('show.bs.collapse', function () {
+    $(this).closest("table")
+        .find(".collapse.in")
+        .not(this)
+        //.collapse('toggle')
+})
+
+
 class F1Constructor {
-constructor(constructorName, constructorWins, constructorPoints, constructorPic, constructorBio, constructorInterestingContent) {
+constructor(constructorPosition, constructorName, constructorWins, constructorPoints, constructorPic, constructorBio, constructorInterestingContent) {
+    this.position = constructorPosition;
     this.name = constructorName;
     this.wins = constructorWins;
     this.points = constructorPoints;
     this.picture = constructorPic; 
-    this.bio = constructorBio;
-    this.content = constructorInterestingContent;
+    //this.bio = constructorBio;
+    //this.content = constructorInterestingContent;
 
     this.element = null;
 }
@@ -14,25 +23,35 @@ constructor(constructorName, constructorWins, constructorPoints, constructorPic,
 let constructorList = [];
 
 
-function addConstructor(constructorName, constructorWins, constructorPoints, constructorPic, constructorBio, constructorInterestingContent) {
-    const F1constructor = new F1Constructor(constructorName, constructorWins, constructorPoints, constructorPic, constructorBio, constructorInterestingContent);
+function addConstructor(constructorPosition, constructorName, constructorWins, constructorPoints, constructorPic, constructorBio, constructorInterestingContent) {
+    const F1constructor = new F1Constructor(constructorPosition, constructorName, constructorWins, constructorPoints, constructorPic, constructorBio, constructorInterestingContent);
     constructorList.push(F1constructor);
     return F1constructor;
 }
 
-function createElement(F1constructor) {
+function createElement(F1constructor, i) {
     let template = document.querySelector("#dropdown-template");
     const clone = template.content.cloneNode(true);
 
-    F1constructor.element = clone.querySelector(".dropdown");
+    F1constructor.element = clone.querySelector("#dropdown");
 
     const constructorElementList = document.querySelector("#constructor-list");
     constructorElementList.prepend(F1constructor.element);
 
+    //change target of dropdown
+    //https://stackoverflow.com/questions/46937411/data-target-button-attribute-change-via-vanilla-javascript
+    let temp = document.getElementById("demo1")
+    temp.id = "demo" + i
+    //console.log(temp)
+
+    let test = document.getElementById("test")
+    test.dataset.target = "#demo" + i;
+    
     updateElement(F1constructor);
 }
 
 function updateElement(F1constructor) {
+    const position = F1constructor.element.querySelector("#button-item-position");
     const name = F1constructor.element.querySelector("#button-item-name");
     const wins = F1constructor.element.querySelector("#button-item-wins");
     const points = F1constructor.element.querySelector("#button-item-points");
@@ -40,12 +59,13 @@ function updateElement(F1constructor) {
     const bio = F1constructor.element.querySelector("#bio-text");
     const content = F1constructor.element.querySelector("#interesting-content");
 
+    position.innerText = F1constructor.position;
     name.innerText = F1constructor.name;
     wins.innerText = F1constructor.wins;
     points.innerText = F1constructor.points;
     picture.src = F1constructor.picture;
-    bio.innerText = F1constructor.bio;
-    content.innerText = F1constructor.content;
+    //bio.innerText = F1constructor.bio;
+    //content.innerText = F1constructor.content;
 }
 
 
@@ -78,16 +98,16 @@ function updateElement(F1constructor) {
 // getInfo()
 // loadInfo()
 
-const rb = addConstructor("Red Bull", 16, 719, "./HW1-assets/logo/formula-1-logo-5-3.png", "hello", "beunos dias")
-const ferrari = addConstructor("Ferrari", 4, 524, "./HW1-assets/logo/formula-1-logo-5-3.png", "hello", "beunos dias")
-const merc = addConstructor("Mercedes", 1, 505, "./HW1-assets/logo/formula-1-logo-5-3.png", "hello", "beunos dias")
-const alpine = addConstructor("Alpine", 0, 167, "./HW1-assets/logo/formula-1-logo-5-3.png", "hello", "beunos dias")
-const mcl = addConstructor("McLaren", 0, 148, "./HW1-assets/logo/formula-1-logo-5-3.png", "hello", "beunos dias")
-const alfaR = addConstructor("Alfa Romeo", 0, 55, "./HW1-assets/logo/formula-1-logo-5-3.png", "hello", "beunos dias")
-const amr = addConstructor("Aston Martin", 0, 50, "./HW1-assets/logo/formula-1-logo-5-3.png", "hello", "beunos dias")
-const haas = addConstructor("Haas", 0, 37, "./HW1-assets/logo/formula-1-logo-5-3.png", "hello", "beunos dias")
-const alphaT = addConstructor("AlphaTauri", 0, 35, "./HW1-assets/logo/formula-1-logo-5-3.png", "hello", "beunos dias")
-const williams = addConstructor("Williams", 0, 8, "./HW1-assets/logo/formula-1-logo-5-3.png", "hello", "beunos dias")
+const rb = addConstructor(1, "Red Bull", 16, 759, "./HW1-assets/constructorPictures/rb.jpg", "hello", "beunos dias")
+const ferrari = addConstructor(2, "Ferrari", 4, 554, "./HW1-assets/constructorPictures/ferrari.jpg", "hello", "beunos dias")
+const merc = addConstructor(3, "Mercedes", 1, 515, "./HW1-assets/constructorPictures/merc.jpg", "hello", "beunos dias")
+const alpine = addConstructor(4, "Alpine", 0, 173, "./HW1-assets/constructorPictures/alpine.jpg", "hello", "beunos dias")
+const mcl = addConstructor(5, "McLaren", 0, 159, "./HW1-assets/constructorPictures/mcl.jpg", "hello", "beunos dias")
+const alfaR = addConstructor(6, "Alfa Romeo", 0, 55, "./HW1-assets/constructorPictures/alfaR.jpg", "hello", "beunos dias")
+const amr = addConstructor(7, "Aston Martin", 0, 55, "./HW1-assets/constructorPictures/amr.jpg", "hello", "beunos dias")
+const haas = addConstructor(8, "Haas", 0, 37, "./HW1-assets/constructorPictures/haas.jpg", "hello", "beunos dias")
+const alphaT = addConstructor(9, "AlphaTauri", 0, 35, "./HW1-assets/constructorPictures/alphaT.jpg", "hello", "beunos dias")
+const williams = addConstructor(10, "Williams", 0, 8, "./HW1-assets/constructorPictures/williams.jpg", "hello", "beunos dias")
 
 //console.log(constructorList);
 
@@ -95,5 +115,5 @@ constructorList = constructorList.reverse();
 
 for (let i = 0; i < constructorList.length; i++) {
     //console.log(constructorList[i]);
-    createElement(constructorList[i]);
+    createElement(constructorList[i], i);
 }
