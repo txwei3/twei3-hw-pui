@@ -58,6 +58,13 @@ function createElement(driver, i) {
   let test = document.getElementById("test")
   test.dataset.target = "#demo" + i;
 
+  if (i%2=== 0) {
+    test.style.backgroundColor = "#FFF7F7";
+  }
+  else {
+    test.style.backgroundColor = "#FFE2E2";
+  }
+
   updateElement(driver, i);
 }
 

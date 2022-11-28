@@ -21,7 +21,7 @@ console.log('hello')
 function drawChart() {
   d3.csv("./HW1-assets/csv/test.csv", function(data) {
     //console.log(data)
-   // group the data: I want to draw one line per group
+    // group the data: I want to draw one line per group
     var sumstat = d3.nest() // nest function allows to group the calculation per level of a factor
       .key(function(d) { return d.driver;})
       .entries(data);
@@ -90,6 +90,7 @@ function drawChart() {
       .attr("transform", "translate(" + (width+3) + "," + y(data[506].n) + ")")
       .attr("dy", 5)
       .attr("text-anchor", "middle")
+      .attr("id", "VER")
       .style("fill", "#377eb8")
       .text("VER");
   
