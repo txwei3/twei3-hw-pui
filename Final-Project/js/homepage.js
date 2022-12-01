@@ -95,7 +95,7 @@ function getInfo() {
     let dWins = positionList[i].wins; // no. wins
     let dPoints = positionList[i].points; // no. points
 
-    let dPic = "./HW1-assets/driverPictures/" + positionList[i].Driver.givenName + ".jpg";
+    let dPic = "./HW1-assets/driverPictures/" + positionList[i].Driver.givenName.toLowerCase() + ".jpg";
     //console.log(dPic);
     let dBio = "hello"
     let dContent = "beunos Dias"
