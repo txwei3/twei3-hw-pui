@@ -146,3 +146,23 @@ width: 100%;
 box-sizing: border-box;
 margin-top: 10px;
 } */
+
+.table {
+  height: 60px;
+  font-size: 20px;
+}
+
+.category-items {
+  font-size: 20px;
+}
+
+#button-item-icon {
+  padding-top: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .table {height:auto}
+  .table {font-size: 14px}
+  #button-item-icon {padding-top: 6px}
+  .category-items {font-size: 14px;}
+}
