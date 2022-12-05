@@ -82,6 +82,7 @@ function updateElement(driver, i) {
   wins.innerText = driver.wins;
   points.innerText = driver.points;
   picture.src = driver.picture;
+  picture.setAttribute("alt", "A headshot portrait of " + driver.name)
   //bio.innerText = driver.bio;
   //content.innerText = driver.content;
 }

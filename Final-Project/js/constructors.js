@@ -72,6 +72,7 @@ function updateElement(F1constructor) {
     wins.innerText = F1constructor.wins;
     points.innerText = F1constructor.points;
     picture.src = F1constructor.picture;
+    picture.setAttribute("alt", "The logo of " + F1constructor.name)
     //bio.innerText = F1constructor.bio;
     //content.innerText = F1constructor.content;
 }
