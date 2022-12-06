@@ -46,6 +46,7 @@ width: 100%;
   color: #ffffff;
   display: block;
   transition: 0.3s;
+  font-weight: bold;
 }
 
 /* When you mouse over the navigation links, change their color */
