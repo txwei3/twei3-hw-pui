@@ -18,6 +18,8 @@ var svg = d3.select("#my_dataviz")
 console.log('hello')
 
 //Read the data
+//https://d3-graph-gallery.com/graph/line_several_group.html
+//multi-line graphs
 function drawChart() {
   d3.csv("./HW1-assets/csv/test.csv", function(data) {
     //console.log(data)

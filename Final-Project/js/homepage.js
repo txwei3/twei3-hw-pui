@@ -1,5 +1,6 @@
 //---creating the dropdowns for the drivers---
 
+//api request
 var settings = {
   "url": "http://ergast.com/api/f1/2022/driverStandings.json",
   "method": "GET",
