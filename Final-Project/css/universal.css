@@ -5,7 +5,7 @@ body {
 .header {
   display: flex;
   /* flex-direction: column; */
-  background-color: #a80000; 
+  background-color: #4A1010; 
 }
 
 #logoContainer {
@@ -32,7 +32,7 @@ width: 100%;
   z-index: 1; /* Stay on top */
   top: 0;
   left: 0;
-  background-color: #a80000;
+  background-color: #4A1010;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
@@ -67,14 +67,14 @@ width: 100%;
 .openbtn {
   font-size: 30px;
   cursor: pointer;
-  background-color: #a80000;
+  background-color: #4A1010;
   color: white;
   padding: 0px 15px;
   border: none;
 }
 
 .openbtn:hover {
-  background-color: #a80000;
+  background-color: #4A1010;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
